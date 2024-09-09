@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Details</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <img src="pictures/tasks2.png" alt="task management image" class="img-liquid" width="100%" height="auto">
+        </div>
+        <h2 class="text-center"><u>Tasks</u></h2>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Task Manager</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#dashboard">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#new-task">New Task</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#register">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<h2 class="text-center">Task Details</h2>
+<br>
+<div class="container-fluid text-center w-50">
+    <div class="border border-2 border-dark rounded">
+        <h3><u>Task Name</u></h3>
+        <p>"Build landing page for my e-commerce store"</p>
+    </div>
+    <br>
+    <div class="border border-2 border-dark rounded">
+        <h3><u>Due Date</u></h3>
+        <p>"01-01-2025'</p>
+    </div>
+    <br>
+    <div class="border border-2 border-dark rounded">
+        <h3><u>Category</u></h3>
+        <p>"Front-End"</p>
+    </div>
+    <br>
+    <div class="border border-2 border-dark rounded">
+        <h3><u>Task Description</u></h3>
+        <p>"It is very importnat that I develop a custom, eye-catching landing page for my store that sells hand-crafted watches.
+             First, I need to build a bare bones HTML structure.  Second, I need to fill in the details with text and Images.
+             Third, I need to style my site with CSS and JavaScript."</p>
+    </div>
+</div>
+<br>
+<h2 class="text-center">Edit Task</h2>
+<br>
+<div class="container-fluid text-center w-50">
+    <form class="p-3rounded needs-validation" novalidate>
+        <div class="row border border-2 rounded m-2">
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <label for="task-name" class="p-4">Task Name</label>
+                    <input type="text" class="form-control" id="task-name" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please provide valid input</div>
+                </div>
+                <br>
+                <div class="form-floating mb-3">
+                    <label for="due-date"></label>
+                    <input type="date" class="form-control" id="due-date" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please provide valid input</div>
+                </div>
+                <br>
+                <div class="form-floating mb-3">
+                    <label for="category">Task Category</label>
+                    <input type="text" class="form-control" id="category" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please provide valid input</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <label for="description">Task Description</label>
+                    <textarea class="form-control" id="description" placeholder="Enter your description here" rows="9" required></textarea>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please provide valid input</div>
+                </div>
+            </div>
+        </div>
+      
+        <button class="btn btn-primary" type="submit">Commit Edit</button>
+    </form>
+</div>
+</body>
+</html>

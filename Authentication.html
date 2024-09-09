@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <img src="pictures/tasks2.png" alt="task management image" class="img-liquid" width="100%" height="auto">
+        </div>
+        <h2 class="text-center"><u>Login</u></h2>
+    </div>
+
+    <div class="container-fluid">
+        <form class="p-3 rounded needs-validation" novalidate>
+            <div class="row border border-2 rounded m-2">
+                <div class="form-floating mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please provide valid input</div>
+                </div>
+                <br>
+                <div class="form-floating mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter create your password" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please provide valid input</div>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="button">Login</button>
+        </form>
+    </div>
+
+
+<script>
+    // Example JavaScript to enable Bootstrap form validation
+    (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()
+</script>
+</body>
+</html>
